@@ -1,0 +1,87 @@
+// Resets
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: $fontSecondary;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    max-width: 1440px;
+}
+
+h1 {
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    letter-spacing: -1.5px;
+    font-size: 2.5rem;
+    margin-bottom: 2.7rem;
+    color: $veryDarkBlue;
+    font-weight: 400;
+    font-family: $fontPrimary;
+}
+
+// Flexbox
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-fe {
+        justify-content: flex-end;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+
+
+}
+
+.hide-for-mobile {
+    @include breakpoint-down (medium) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up (medium) {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+hr {
+    margin: 2rem 0;
+    opacity: 0.1;
+    height: 1px;
+    border: none;
+    background-color: $veryDarkBlackBlue;
+}
