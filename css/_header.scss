@@ -1,7 +1,7 @@
 .header {
     height: 57.1rem;
     width: 100%;
-    background-image: url('/images/bg-pattern-intro.svg'),
+    background-image: url('images/bg-pattern-intro.svg'),
         linear-gradient(to right, #ff8f70, #ff3d54);
     background-repeat: no-repeat;
     background-position: 28.9% 51%;
@@ -12,7 +12,7 @@
     @include breakpoint-down (medium) {
         background-size: 250%;
         background-position: 33% 31%;
-        background-image: url('/images/bg-pattern-intro.svg'),
+        background-image: url('images/bg-pattern-intro.svg'),
             linear-gradient(0deg, rgba(255, 61, 84, 1) 0%, rgba(255, 143, 112, 1) 100%);
         margin-bottom: 9rem;
     }
